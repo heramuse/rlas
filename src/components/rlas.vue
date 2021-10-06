@@ -77,7 +77,7 @@ export default {
 		msgURL: 'https://slack.com/api/chat.postMessage',
 		msgToken1 : '2541818091588',
 		msgToken2 : '2541834361300',
-		msgToken3 : 'mpTCWKYTHwd91e9fKyMbhdvF',
+		msgToken3 : 'bWMPkMTpj9uVnSukq9NBcFyt',
 		msgChannel : 'class',
 		msgUser: null,
 		msgText: null,
