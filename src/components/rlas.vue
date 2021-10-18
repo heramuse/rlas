@@ -67,7 +67,7 @@ import data from '../assets/data.json'
 export default {
 	name: 'rlas',
 	data: () => ({
-		URL: 'https://teachablemachine.withgoogle.com/models/RlAfHZb4T/',				
+		URL: 'https://teachablemachine.withgoogle.com/models/l1-JEnaKd/',				
 		webcam: null,
 		labelContainer: null,
 		maxPredictions: null,
