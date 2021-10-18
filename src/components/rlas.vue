@@ -131,10 +131,11 @@ export default {
 					this.state_count = 0;
 				} else {
 					this.state_count++;	 // 바른 자세가 아닌 경우 count함				
-				}
+				}				
 				console.log(this.state_count);
 				const item = data[prediction[max_index].className];				
 				this.resultItem = item
+				this.resultItem.m1 = this.state_count;  // for testing
 				isPrediction = true
 			}
 			if (this.state_count === -1 && isPrediction === false) {  // 기존은 예측을 못할 경우 아이콘이 보였으나, 처음에만 나오도록 설정
@@ -144,6 +145,7 @@ export default {
 				let text = this.msgUser + "님, " + this.resultItem.message;
 				await this.post_message(text);
 				this.state_count = 0;
+				this.resultItem.m1 = this.state_count;   // for testing
 			}
 		},
 		// slack에 메시지를 보내는 함수
