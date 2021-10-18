@@ -18,7 +18,7 @@
 				<v-col cols="12">
 					<v-card v-if="resultItem" >
 						<v-card-text>
-							<div class="text-h4 black--text font-weight-bold">{{ resultItem.m1 }}</div>
+							<div class="text-h4 black--text font-weight-bold">{{ resultItem.name }}</div>
 							<v-row title>
 								<v-spacer></v-spacer>
 								<v-col shrink></v-col>
