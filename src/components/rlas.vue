@@ -141,7 +141,7 @@ export default {
 			if (this.state_count === -1 && isPrediction === false) {  // 기존은 예측을 못할 경우 아이콘이 보였으나, 처음에만 나오도록 설정
 				this.resultItem = null
 			}			
-			if(this.state_count > 1000) {    // 바른 자세가 연속적으로 1000번 이상 아닌 경우 그 때의 상태를 메시지를 보냄
+			if(this.state_count > 300) {    // 바른 자세가 연속적으로 1000번 이상 아닌 경우 그 때의 상태를 메시지를 보냄
 				let text = this.msgUser + "님, " + this.resultItem.message;
 				await this.post_message(text);
 				this.state_count = 0;
