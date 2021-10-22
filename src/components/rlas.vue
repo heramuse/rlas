@@ -141,7 +141,7 @@ export default {
 			if (this.state_count === -1 && isPrediction === false) {  // 기존은 예측을 못할 경우 아이콘이 보였으나, 처음에만 나오도록 설정
 				this.resultItem = null
 			}			
-			if(this.state_count > 500) {    
+			if(this.state_count > 300) {    
 				let text = this.msgUser + "님, " + this.resultItem.message;
 				await this.post_message(text);
 				this.state_count = 0;
